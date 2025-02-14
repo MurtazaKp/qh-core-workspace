@@ -111,6 +111,37 @@
           }
         }
       }
+    },
+    "qh-core": {
+      "projectType": "library",
+      "root": "projects/qh-core",
+      "sourceRoot": "projects/qh-core/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/qh-core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/qh-core/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/qh-core/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/qh-core/src/test.ts",
+            "tsConfig": "projects/qh-core/tsconfig.spec.json",
+            "karmaConfig": "projects/qh-core/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "storybook-repro"

@@ -1,0 +1,334 @@
+// TODO : Replaced all hex code with color variables.
+
+.qh-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+    min-width: 100px;
+    font-size: 14px;
+    height: 40px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #000;
+    padding: 12px 16px;
+    overflow: hidden;
+    position: relative;
+    z-index: 9999;
+  
+  
+    &:active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+  
+    }
+  
+    &:active::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      overflow: hidden;
+      position: absolute;
+      z-index: 1;
+      transform-origin: center center;
+      animation: pressEffect 0.3s ease-in-out forwards;
+    }
+  
+    &--primary {
+      background-color: #0E45B7;
+      border: 1px solid #0E45B7;
+      color: #ffffff;
+  
+  
+      &:hover {
+        background-color: #0D3EA5;
+      }
+  
+      &:focus {
+        border: 1px solid #9FB5E2;
+      }
+  
+  
+      &:disabled {
+        background-color: #E5E7EB;
+        border: 1px solid #E5E7EB;
+        color: #9CA3AF;
+        cursor: not-allowed;
+      }
+  
+      &:active {
+        background-color: #08296E;
+      }
+  
+      &:active::after {
+        background-color: #3E6AC5;
+      }
+    }
+  
+    &--secondary {
+      border: 1px solid #0E45B7;
+      background-color: transparent;
+      color: #0E45B7;
+      overflow: hidden;
+  
+      &:hover {
+        border: 1px solid #0D3EA5;
+        color: #0D3EA5;
+      }
+  
+      &:focus {
+        border: 1px solid #9FB5E2;
+        color: #0E45B7;
+      }
+  
+  
+      &:disabled {
+        border: 1px solid #E7ECF8;
+        color: #9CA3AF;
+        cursor: not-allowed;
+      }
+  
+      &:active {
+        background-color: transparent;
+      }
+  
+      &:active::after {
+        background-color: #9FB5E2;
+      }
+  
+    }
+  
+    &--tertiary {
+      background-color: transparent;
+      border: none;
+      color: #0E45B7;
+      border: 2px solid transparent;
+  
+  
+      &:hover {
+        background-color: #E7ECF8;
+        color: #0D3EA5;
+      }
+  
+      &:focus {
+        border: 2px solid #9FB5E2;
+        background-color: #E7ECF8;
+      }
+  
+  
+      &:disabled {
+        color: #9CA3AF;
+        cursor: not-allowed;
+      }
+  
+      &:active {
+        background-color: #E7ECF8;
+      }
+  
+      &:active::after {
+        background-color: #B7C7E9;
+      }
+  
+    }
+  
+    &--sm {
+      height: 36px;
+    }
+  
+    &--md {
+      height: 40px;
+    }
+  
+    &--lg {
+      height: 48px;
+    }
+  
+    &--icon span {
+      display: flex;
+    }
+  
+  
+  }
+  
+  .leading,
+  .btn-label,
+  .caret-down {
+    position: relative;
+    z-index: 999;
+  }
+  
+  
+  
+  .qh-button-danger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+    min-width: 100px;
+    font-size: 14px;
+    height: 40px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #000;
+    padding: 12px 16px;
+    overflow: hidden;
+    position: relative;
+    z-index: 9999;
+  
+  
+    &:active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+  
+    }
+  
+    &:active::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      overflow: hidden;
+      position: absolute;
+      z-index: 1;
+      transform-origin: center center;
+      animation: pressEffect 0.3s ease-in-out forwards;
+    }
+  
+    &--primary {
+      background-color: #DB3545;
+      border: 1px solid #DB3545;
+      color: #ffffff;
+  
+  
+      &:hover {
+        background-color: #A82935;
+      }
+  
+      &:focus {
+        border: 1px solid #9FB5E2;
+      }
+  
+  
+      &:disabled {
+        background-color: #E5E7EB;
+        border: 1px solid #E5E7EB;
+        color: #9CA3AF;
+        cursor: not-allowed;
+      }
+  
+      &:active {
+        background-color: #8F222D
+      }
+  
+      &:active::after {
+      background-color: rgba(219, 53, 69, 0.4);;
+      }
+    }
+  
+    &--secondary {
+      border: 1px solid #DB3545;
+      background-color: transparent;
+      color: #DB3545;
+      overflow: hidden;
+  
+      &:hover {
+        border: 1px solid #A82935;
+        color: #A82935;
+      }
+  
+      &:focus {
+        border: 1px solid #9FB5E2;
+        color: #A82935;
+      }
+  
+  
+      &:disabled {
+        border: 1px solid #E7ECF8;
+        color: #9CA3AF;
+        cursor: not-allowed;
+      }
+  
+      &:active {
+        background-color: transparent;
+        border: 1px solid #8F222D;
+      }
+  
+      &:active::after {
+        background-color: #FFD6DA;
+      }
+  
+    }
+  
+    &--tertiary {
+      background-color: transparent;
+      border: none;
+      color: #DB3545;
+      border: 2px solid transparent;
+  
+  
+      &:hover {
+        background-color: #FFD6DA;
+        color: #A82935;
+      }
+  
+      &:focus {
+        border: 2px solid #9FB5E2;
+        background-color: #FFD6DA;
+      }
+  
+  
+      &:disabled {
+        color: #9CA3AF;
+        cursor: not-allowed;
+      }
+  
+      &:active {
+        background-color: #FFD6DA;
+      }
+  
+      &:active::after {
+      background-color: rgba(219, 53, 69, 0.1);
+      }
+  
+    }
+  
+    &--sm {
+      height: 36px;
+    }
+  
+    &--md {
+      height: 40px;
+    }
+  
+    &--lg {
+      height: 48px;
+    }
+  
+    &--icon span {
+      display: flex;
+    }
+  
+  
+  }
+  
+  
+  
+  
+  
+  @keyframes pressEffect {
+    0% {
+      transform:scale(1);
+    }
+  
+    100% {
+      transform: scale(3)
+  
+    }
+  }

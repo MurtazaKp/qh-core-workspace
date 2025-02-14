@@ -5,7 +5,9 @@ import { Component } from '@angular/core';
   template: `
     <!--The content below is only a placeholder and can be replaced.-->
     <div style="text-align:center" class="content">
-      <h1>
+      <lib-qh-button></lib-qh-button>
+    </div>
+      <!-- <h1>
         Welcome to {{title}}!
       </h1>
       <span style="display: block">{{ title }} app is running!</span>
@@ -23,7 +25,7 @@ import { Component } from '@angular/core';
         <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
       </li>
     </ul>
-    <router-outlet></router-outlet>
+    <router-outlet></router-outlet> -->
   `,
   styles: []
 })

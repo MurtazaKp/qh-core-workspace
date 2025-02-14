@@ -1,0 +1,17 @@
+<button [ngClass]="classes" (click)="buttonClick()" tabindex="0" [disabled]="disabled" [attr.aria-label]="ariaLabel">
+    <span *ngIf="icon === 'leading' || icon === 'both' || icon === 'only icon'" class="leading">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 16 15" fill="none">
+<path d="M8.00343 0.5C10.4887 0.5 12.5034 2.51472 12.5034 5V5.75H15.5034V7.25H14.6282L14.0607 14.0623C14.0283 14.451 13.7034 14.75 13.3133 14.75H2.69352C2.30346 14.75 1.9785 14.451 1.94611 14.0623L1.37792 7.25H0.503418V5.75H3.50342V5C3.50342 2.51472 5.51814 0.5 8.00343 0.5ZM13.1229 7.25H2.88317L3.38342 13.25H12.6227L13.1229 7.25ZM8.75343 8.75V11.75H7.25343V8.75H8.75343ZM5.75342 8.75V11.75H4.25342V8.75H5.75342ZM11.7534 8.75V11.75H10.2534V8.75H11.7534ZM8.00343 2C6.39678 2 5.08511 3.26298 5.00709 4.85027L5.00342 5V5.75H11.0034V5C11.0034 3.39335 9.74043 2.08169 8.15313 2.00367L8.00343 2Z" fill="currentColor"/>
+</svg>
+</span>
+<span *ngIf="icon !== 'only icon'" class="btn-label" >{{ text }}</span>
+
+<span *ngIf="icon === 'trailing' || icon === 'both'" class="caret-down">
+    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+<path d="M4.99998 3.87855L8.71233 0.16626L9.77298 1.22692L4.99998 5.99992L0.227051 1.22692L1.28771 0.16626L4.99998 3.87855Z" fill="currentColor"/>
+</svg>
+</span>
+</button>
+
+
+
